@@ -71,9 +71,9 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(12, 570);
+            this.saveButton.Location = new System.Drawing.Point(12, 575);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 36);
+            this.saveButton.Size = new System.Drawing.Size(75, 31);
             this.saveButton.TabIndex = 4;
             this.saveButton.Text = "&Save";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@
             // exitButton
             // 
             this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.exitButton.Location = new System.Drawing.Point(12, 609);
+            this.exitButton.Location = new System.Drawing.Point(12, 614);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 36);
+            this.exitButton.Size = new System.Drawing.Size(75, 31);
             this.exitButton.TabIndex = 5;
             this.exitButton.Text = "E&xit";
             this.exitButton.UseVisualStyleBackColor = true;
