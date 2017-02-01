@@ -18,7 +18,7 @@ namespace MyApplication_C_Sharp_1
         private void mainForm_Load(object sender, System.EventArgs e)
         {
             usernameToolStripStatusLabel.Text=
-                "Welcome"+ Infrastructure.Utility.AuthenticatedUser.FullName;
+                "Welcome "+ Infrastructure.Utility.AuthenticatedUser.FullName;
         }
 
         private void exitToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -41,7 +41,7 @@ namespace MyApplication_C_Sharp_1
 
         private void updateProfileToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            UpdateProfileForm updateProfileForm = new UpdateProfileForm();            
+            updateProfileForm updateProfileForm = new updateProfileForm();            
             updateProfileForm.Show();
             updateProfileForm.MdiParent = this;
         }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mainFormStatusStrip = new System.Windows.Forms.StatusStrip();
-            this.usernameToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainFormStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.usernameToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.mainFormStatusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -48,22 +48,6 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // mainFormStatusStrip
-            // 
-            this.mainFormStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usernameToolStripStatusLabel});
-            this.mainFormStatusStrip.Location = new System.Drawing.Point(0, 434);
-            this.mainFormStatusStrip.Name = "mainFormStatusStrip";
-            this.mainFormStatusStrip.Size = new System.Drawing.Size(565, 22);
-            this.mainFormStatusStrip.TabIndex = 2;
-            this.mainFormStatusStrip.Text = "statusStrip1";
-            // 
-            // usernameToolStripStatusLabel
-            // 
-            this.usernameToolStripStatusLabel.Name = "usernameToolStripStatusLabel";
-            this.usernameToolStripStatusLabel.Size = new System.Drawing.Size(118, 17);
-            this.usernameToolStripStatusLabel.Text = "toolStripStatusLabel1";
-            // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -76,16 +60,33 @@
             // updateProfileToolStripMenuItem
             // 
             this.updateProfileToolStripMenuItem.Name = "updateProfileToolStripMenuItem";
-            this.updateProfileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateProfileToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.updateProfileToolStripMenuItem.Text = "Update &Profile";
             this.updateProfileToolStripMenuItem.Click += new System.EventHandler(this.updateProfileToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // mainFormStatusStrip
+            // 
+            this.mainFormStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.usernameToolStripStatusLabel});
+            this.mainFormStatusStrip.Location = new System.Drawing.Point(0, 434);
+            this.mainFormStatusStrip.Name = "mainFormStatusStrip";
+            this.mainFormStatusStrip.Size = new System.Drawing.Size(565, 22);
+            this.mainFormStatusStrip.TabIndex = 2;
+            this.mainFormStatusStrip.Text = "statusStrip1";
+            // 
+            // usernameToolStripStatusLabel
+            // 
+            this.usernameToolStripStatusLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.usernameToolStripStatusLabel.Name = "usernameToolStripStatusLabel";
+            this.usernameToolStripStatusLabel.Size = new System.Drawing.Size(118, 17);
+            this.usernameToolStripStatusLabel.Text = "toolStripStatusLabel1";
             // 
             // mainForm
             // 
