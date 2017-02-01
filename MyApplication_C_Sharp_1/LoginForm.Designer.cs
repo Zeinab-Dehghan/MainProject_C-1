@@ -40,8 +40,6 @@
             // 
             // usenameLabel
             // 
-            this.usenameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.usenameLabel.AutoSize = true;
             this.usenameLabel.Location = new System.Drawing.Point(6, 15);
             this.usenameLabel.Name = "usenameLabel";
@@ -51,13 +49,11 @@
             // 
             // passwordLabel
             // 
-            this.passwordLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordLabel.AutoSize = true;
             this.passwordLabel.Location = new System.Drawing.Point(6, 45);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(53, 13);
-            this.passwordLabel.TabIndex = 1;
+            this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "&Password";
             // 
             // usernameTextBox
@@ -68,7 +64,7 @@
             this.usernameTextBox.MaxLength = 20;
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(272, 20);
-            this.usernameTextBox.TabIndex = 2;
+            this.usernameTextBox.TabIndex = 1;
             // 
             // passwordTextBox
             // 
