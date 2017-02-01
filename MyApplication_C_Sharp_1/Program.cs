@@ -19,7 +19,7 @@ namespace MyApplication_C_Sharp_1
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
 
             //**************************************************
-            LoginForm frmStartup = new LoginForm();
+            loginForm frmStartup = new loginForm();
 
             System.Windows.Forms.Application.Run(frmStartup);
 

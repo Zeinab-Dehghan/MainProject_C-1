@@ -1,4 +1,4 @@
-﻿namespace MyApplication_C_Sharp_1.Infrastructure
+﻿namespace Infrastructure
 {
     partial class BaseForm
     {
@@ -37,7 +37,9 @@
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(451, 378);
             this.Name = "BaseForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BaseForm";
+            this.Load += new System.EventHandler(this.BaseForm_Load);
             this.ResumeLayout(false);
 
         }

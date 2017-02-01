@@ -1,12 +1,17 @@
 ﻿using System.Linq;
 
-namespace MyApplication_C_Sharp_1.Infrastructure
+namespace Infrastructure
 {
     public partial class BaseForm : System.Windows.Forms.Form
     {
         public BaseForm()
         {
-            InitializeComponent();
+           InitializeComponent();
+        }
+
+        private void BaseForm_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }
