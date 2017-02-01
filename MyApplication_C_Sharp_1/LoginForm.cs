@@ -93,7 +93,7 @@ namespace MyApplication_C_Sharp_1
                 }
                 Infrastructure.Utility.AuthenticatedUser = oUser;
                 Hide();
-                MainForm mainForm = new MainForm();
+                mainForm mainForm = new mainForm();
                 mainForm.Show();
             }
             catch (System.Exception ex)

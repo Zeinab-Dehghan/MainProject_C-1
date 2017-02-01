@@ -54,7 +54,7 @@
             this.passwordLabel.Location = new System.Drawing.Point(12, 50);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(53, 13);
-            this.passwordLabel.TabIndex = 1;
+            this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "&Password";
             // 
             // fullNameLabel
@@ -63,7 +63,7 @@
             this.fullNameLabel.Location = new System.Drawing.Point(12, 76);
             this.fullNameLabel.Name = "fullNameLabel";
             this.fullNameLabel.Size = new System.Drawing.Size(51, 13);
-            this.fullNameLabel.TabIndex = 2;
+            this.fullNameLabel.TabIndex = 4;
             this.fullNameLabel.Text = "Full&Name";
             // 
             // usernameTextBox
@@ -74,7 +74,7 @@
             this.usernameTextBox.MaxLength = 20;
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(235, 20);
-            this.usernameTextBox.TabIndex = 3;
+            this.usernameTextBox.TabIndex = 1;
             // 
             // passwordTextBox
             // 
@@ -85,7 +85,7 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(235, 20);
-            this.passwordTextBox.TabIndex = 4;
+            this.passwordTextBox.TabIndex = 3;
             // 
             // fullNameTextBox
             // 
@@ -129,9 +129,12 @@
             // 
             // registerForm
             // 
+            this.AcceptButton = this.registerButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.exitButton;
             this.ClientSize = new System.Drawing.Size(328, 143);
+            this.ControlBox = false;
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.registerButton);
