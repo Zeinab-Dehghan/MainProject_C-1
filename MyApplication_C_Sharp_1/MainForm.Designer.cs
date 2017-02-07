@@ -32,8 +32,11 @@
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainFormStatusStrip = new System.Windows.Forms.StatusStrip();
             this.usernameToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.registrationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.mainFormStatusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -41,7 +44,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.settingToolStripMenuItem});
+            this.settingToolStripMenuItem,
+            this.administratorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(565, 24);
@@ -71,6 +75,22 @@
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // administratorToolStripMenuItem
+            // 
+            this.administratorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userListToolStripMenuItem,
+            this.registrationToolStripMenuItem});
+            this.administratorToolStripMenuItem.Name = "administratorToolStripMenuItem";
+            this.administratorToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.administratorToolStripMenuItem.Text = "Administrator";
+            // 
+            // userListToolStripMenuItem
+            // 
+            this.userListToolStripMenuItem.Name = "userListToolStripMenuItem";
+            this.userListToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.userListToolStripMenuItem.Text = "&Users List";
+            this.userListToolStripMenuItem.Click += new System.EventHandler(this.userListToolStripMenuItem_Click);
+            // 
             // mainFormStatusStrip
             // 
             this.mainFormStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -87,6 +107,13 @@
             this.usernameToolStripStatusLabel.Name = "usernameToolStripStatusLabel";
             this.usernameToolStripStatusLabel.Size = new System.Drawing.Size(118, 17);
             this.usernameToolStripStatusLabel.Text = "toolStripStatusLabel1";
+            // 
+            // registrationToolStripMenuItem
+            // 
+            this.registrationToolStripMenuItem.Name = "registrationToolStripMenuItem";
+            this.registrationToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.registrationToolStripMenuItem.Text = "&Registration";
+            this.registrationToolStripMenuItem.Click += new System.EventHandler(this.registrationToolStripMenuItem_Click);
             // 
             // mainForm
             // 
@@ -118,5 +145,8 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.StatusStrip mainFormStatusStrip;
         private System.Windows.Forms.ToolStripStatusLabel usernameToolStripStatusLabel;
+        private System.Windows.Forms.ToolStripMenuItem administratorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem userListToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrationToolStripMenuItem;
     }
 }

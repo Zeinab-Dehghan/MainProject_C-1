@@ -19,6 +19,15 @@ namespace MyApplication_C_Sharp_1
         {
             usernameToolStripStatusLabel.Text=
                 "Welcome "+ Infrastructure.Utility.AuthenticatedUser.FullName;
+
+            if(Infrastructure.Utility.AuthenticatedUser.IsAdmin==true)
+            {
+                administratorToolStripMenuItem.Visible = true;
+            }
+            else
+            {
+                administratorToolStripMenuItem.Visible = false;
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -44,6 +53,20 @@ namespace MyApplication_C_Sharp_1
             updateProfileForm updateProfileForm = new updateProfileForm();            
             updateProfileForm.Show();
             updateProfileForm.MdiParent = this;
+        }
+
+        private void userListToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Admin.usersListForm oUserListFrom = new Admin.usersListForm();
+            oUserListFrom.MdiParent = this;
+            oUserListFrom.Show();
+        }
+
+        private void registrationToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            registerForm oRegisterForm = new MyApplication_C_Sharp_1.registerForm();
+            oRegisterForm.MdiParent = this;
+            oRegisterForm.Show();
         }
     }
 }

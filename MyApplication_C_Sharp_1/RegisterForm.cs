@@ -17,7 +17,7 @@ namespace MyApplication_C_Sharp_1
 
         private void exitButton_Click(object sender, System.EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            Close();
         }
 
         private void resetButton_Click(object sender, System.EventArgs e)

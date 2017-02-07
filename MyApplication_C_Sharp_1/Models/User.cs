@@ -11,6 +11,10 @@
         //**********
 
         //**********
+        public bool IsAdmin { get; set; }
+        //**********
+
+        //**********
         [System.ComponentModel.DataAnnotations.Required
             (AllowEmptyStrings =false)]
         [System.ComponentModel.DataAnnotations.StringLength

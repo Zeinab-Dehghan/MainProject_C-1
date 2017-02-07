@@ -32,7 +32,7 @@ namespace MyApplication_C_Sharp_1
         {
             Hide();
             registerForm registerForm = new registerForm();
-            registerForm.Show();
+            registerForm.ShowDialog();
         }
 
         private void loginButton_Click(object sender, System.EventArgs e)
