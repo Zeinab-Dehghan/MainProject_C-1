@@ -68,5 +68,12 @@ namespace MyApplication_C_Sharp_1
             oRegisterForm.MdiParent = this;
             oRegisterForm.Show();
         }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            changePasswordForm changePasswordForm = new changePasswordForm();
+            changePasswordForm.MdiParent = this;
+            changePasswordForm.Show();
+        }
     }
 }

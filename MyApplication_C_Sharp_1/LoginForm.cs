@@ -29,8 +29,7 @@ namespace MyApplication_C_Sharp_1
         }
 
         private void registerButton_Click(object sender, System.EventArgs e)
-        {
-            Hide();
+        {            
             registerForm registerForm = new registerForm();
             registerForm.ShowDialog();
         }
