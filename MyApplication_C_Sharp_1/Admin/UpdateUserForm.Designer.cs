@@ -43,9 +43,10 @@
             this.saveButton.Location = new System.Drawing.Point(72, 327);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 31);
-            this.saveButton.TabIndex = 10;
+            this.saveButton.TabIndex = 6;
             this.saveButton.Text = "&Save";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // descriptionLabel
             // 
@@ -53,7 +54,7 @@
             this.descriptionLabel.Location = new System.Drawing.Point(6, 36);
             this.descriptionLabel.Name = "descriptionLabel";
             this.descriptionLabel.Size = new System.Drawing.Size(60, 13);
-            this.descriptionLabel.TabIndex = 8;
+            this.descriptionLabel.TabIndex = 2;
             this.descriptionLabel.Text = "Description";
             // 
             // descriptionTextBox
@@ -65,7 +66,7 @@
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(355, 217);
-            this.descriptionTextBox.TabIndex = 9;
+            this.descriptionTextBox.TabIndex = 3;
             // 
             // fullNameTextBox
             // 
@@ -74,7 +75,7 @@
             this.fullNameTextBox.Location = new System.Drawing.Point(72, 10);
             this.fullNameTextBox.Name = "fullNameTextBox";
             this.fullNameTextBox.Size = new System.Drawing.Size(355, 20);
-            this.fullNameTextBox.TabIndex = 7;
+            this.fullNameTextBox.TabIndex = 1;
             // 
             // fullNamelabel
             // 
@@ -82,7 +83,7 @@
             this.fullNamelabel.Location = new System.Drawing.Point(6, 10);
             this.fullNamelabel.Name = "fullNamelabel";
             this.fullNamelabel.Size = new System.Drawing.Size(51, 13);
-            this.fullNamelabel.TabIndex = 6;
+            this.fullNamelabel.TabIndex = 0;
             this.fullNamelabel.Text = "FullName";
             // 
             // isActiveCheckBox
@@ -92,7 +93,7 @@
             this.isActiveCheckBox.Location = new System.Drawing.Point(72, 259);
             this.isActiveCheckBox.Name = "isActiveCheckBox";
             this.isActiveCheckBox.Size = new System.Drawing.Size(56, 17);
-            this.isActiveCheckBox.TabIndex = 11;
+            this.isActiveCheckBox.TabIndex = 4;
             this.isActiveCheckBox.Text = "&Active";
             this.isActiveCheckBox.UseVisualStyleBackColor = true;
             // 
@@ -103,12 +104,13 @@
             this.isAdminCheckBox.Location = new System.Drawing.Point(72, 282);
             this.isAdminCheckBox.Name = "isAdminCheckBox";
             this.isAdminCheckBox.Size = new System.Drawing.Size(55, 17);
-            this.isAdminCheckBox.TabIndex = 12;
+            this.isAdminCheckBox.TabIndex = 5;
             this.isAdminCheckBox.Text = "A&dmin";
             this.isAdminCheckBox.UseVisualStyleBackColor = true;
             // 
             // updateUserForm
             // 
+            this.AcceptButton = this.saveButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 365);
@@ -122,6 +124,7 @@
             this.MinimumSize = new System.Drawing.Size(451, 403);
             this.Name = "updateUserForm";
             this.Text = "UpdateUser";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.updateUserForm_FormClosed);
             this.Load += new System.EventHandler(this.updateUserForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
