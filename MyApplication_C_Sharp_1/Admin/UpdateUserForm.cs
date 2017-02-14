@@ -11,6 +11,8 @@ namespace MyApplication_C_Sharp_1.Admin
             InitializeComponent();
         }
 
+        public System.Guid UserId { get; set; }
+
         private void updateUserForm_Load(object sender, System.EventArgs e)
         {
 

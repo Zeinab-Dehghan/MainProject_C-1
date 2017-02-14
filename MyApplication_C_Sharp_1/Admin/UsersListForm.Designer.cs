@@ -61,6 +61,7 @@
             this.searchButton.TabIndex = 2;
             this.searchButton.Text = "&Search";
             this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // UsersListBox
             // 
@@ -72,6 +73,7 @@
             this.UsersListBox.Name = "UsersListBox";
             this.UsersListBox.Size = new System.Drawing.Size(278, 264);
             this.UsersListBox.TabIndex = 3;
+            this.UsersListBox.DoubleClick += new System.EventHandler(this.UsersListBox_DoubleClick);
             // 
             // usersListForm
             // 
@@ -85,6 +87,7 @@
             this.MinimumSize = new System.Drawing.Size(375, 359);
             this.Name = "usersListForm";
             this.Text = "UsersList";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.usersListForm_FormClosed);
             this.Load += new System.EventHandler(this.usersListForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
